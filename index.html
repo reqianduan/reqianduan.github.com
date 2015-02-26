@@ -12,71 +12,47 @@
 			margin: 0;
 			padding: 0;
 		}
-		html,body{
-			background: #1E8ECF;
-			background-image: -webkit-radial-gradient(closest-corner,rgba(16, 47, 70, 0) 60%,rgba(16, 47, 70, 0.2)),-webkit-linear-gradient(108deg,#E5E9BF 10%,#00396F 90%);
-			background-image: radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.2)), -moz-linear-gradient(108deg, #E5E9BF 10%, #00396F 90%);
-			font: 76% tahoma,Microsoft YaHei,Arial,Helvetica;
-
+		html, body{ height:100%; }
+		.content{
+			display: table;
+			width: 100%;
 			height: 100%;
-			overflow: hidden;
 		}
-		.coming-soon{
+		.inner{
+			display: table-cell;
+			vertical-align: middle;
 			text-align: center;
-			color: #fff;
-			overflow: hidden;
 		}
-		.coming-soon .header{
-			margin-top: 20%;
-			margin-bottom: 30px;
-		}
-		.coming-soon .logo{
-			font-size: 35px;
-			color: #fff;
-			margin-top: 15px;
-			text-transform: uppercase;
+		.inner a{
+			color: #333;
 			text-decoration: none;
 		}
-		.coming-soon .logo span{
-			color: #FF6C60;
+		.inner h1{
+			font-size: 50px;
+			font-weight: 300;
 		}
-		.coming-soon h1{
-			font-size: 36px;
-			font-weight: 500;
-			margin-top: 20px;
-			margin-bottom: 10px;
-			line-height: 1.1;
+		.inner h2{
+			font-size: 24px;
+			font-weight: 300;
+			margin: 1em 0 1em;
 		}
-		.coming-soon p{
-			margin: 0 0 10px;
-		}
-		.coming-soon .btn{
-			background-color: #FF6C60;
-			border-color: #FF6C60;
-			color: #fff;
-			display: inline-block;
-			padding: 10px 20px;
-			margin-bottom: 0;
-			font-size: 14px;
-			text-align: center;
-			text-decoration: none;
-			border-radius: 4px;
-			line-height: 1.5;
+		.inner .follow{
+			margin: 4em auto;
 		}
 	</style>
 </head>
-<body class="coming-soon">
-	<div class="header">
-        <a class="logo" href="http://www.reqianduan.com"><span>热</span>前端</a>
-        <br>
-        <br>
-        <p>前端开发工程师、前端爱好者学习交流平台。</p>
-    </div>
+<body>
+	<div class="content">
+		<div class="inner">
+	        <a class="logo" href="http://www.reqianduan.com">
+	        	<h1>热前端</h1>
+				<h2>前端开发工程师、前端爱好者学习交流平台</h2>
+	        </a>
 
-    <div class="footer">
-    	<p>想了解更多？</p>
-    	<a class="btn" href="http://weibo.com/reqianduan" target="_blank" rel="nofollow">关注微博</a>
-    </div>
-
+			<div class="follow">
+				<a href="http://weibo.com/reqianduan" target="_blank" rel="nofollow">关注微博</a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
